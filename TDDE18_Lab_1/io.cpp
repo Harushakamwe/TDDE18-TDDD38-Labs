@@ -1,99 +1,94 @@
 //io.cpp
 #include <iostream>
 #include <iomanip>
+#include <string>
 
 using namespace std;
 
 int main(){
 
+    int integer{0};
+    double dbl{0.0};
+    char c{'.'};
+    string str{""};
+
     //Printout 1
-    /*int n;
-    cout << "Enter one integer: " << flush;
-    cin >> n;
-    cout << "You entered the number: " << n << endl;
+    cout << "Enter one integer: ";
+    cin >> integer;
+    cin.ignore(1000, '\n');
+    cout << "You entered the number: " << integer << endl;
 
     //Printout 2
-    int x1{0};
-    cout << "Enter four integer: " << flush;
-    cin >> x1;
-    cout << "You entered the numbers: " << x1;
-    cin >> x1;
-    cout << " " << x1;
-    cin >> x1;
-    cout << " " << x1;
-    cin >> x1;
-    cout << " " << x1 << endl;
+    cout << "Enter four integer: ";
+    cin >> integer;
+    cout << "You entered the numbers: " << integer;
+    cin >> integer;
+    cout << " " << integer;
+    cin >> integer;
+    cout << " " << integer;
+    cin >> integer;
+    cout << " " << integer << endl;
 
     //Printout 3
-    float f{0};
-    int x2{0};
-    cout << "Enter one integer and one real number: " << flush;
-    cin >> x2 >> f;
-    cout << "The real is:" << setw(12) << setprecision(4) << f << endl;
-    cout << "The integer is:" << setw(9) << x2 << endl;
+    /*cout << "Enter one integer and one real number: ";
+    cin >> integer;
+    cin >> dbl;
+    cout << "The real is:" /*<< setw(12) << setprecision(4) << dbl << endl;
+    cout << "The integer is:" /*<< setw(9) << integer << endl;
 
     //Printout 4
-    float f2{0};
-    int x3{0};
-    cout << "Enter one real and one integer number: " << flush;
-    cin >> f2 >> x3;
-    cout << "The real is: " << setw(12) << setfill('.') << setprecision(4) << f2 << endl;
-    cout << "The integer is: " << setw(9) << setfill('.') << x3 << endl;
+    cout << "Enter one real and one integer number: ";
+    cin >> dbl;
+    cin >> integer;
+    cout << "The real is: " << setw(12) << setfill('.') << setprecision(4) << dbl << endl;
+    cout << "The integer is: " << setw(9) << setfill('.') << integer << endl;
 
     //Printout 4
-    char c{'.'};
-    cout << "Enter a character: " << flush;
+    cout << "Enter a character: ";
     cin >> c;
     cout << "You entered: " << c << endl;
 
     //Printout 5
-    string str{"something"};
     cout << "Enter a word: " << flush;
     cin >> str;
-    cout << "The word 'Calvin' has " << str.size() << " character(s)." << endl;
+    cout << "The word '" << str <<"' has " << str.size() << " character(s)." << endl;
 
     //Printout 6
-    string str2{"something"};
-    int x4{0};
-    cout << "Enter an integer and a word: " << flush;
-    cin >> x4 >> str2;
-    cout << "You entered '" << x4 << "' and '" << str2 << "'." << endl;
+    cout << "Enter an integer and a word: ";
+    cin >> integer;
+    cin >> str;
+    cout << "You entered '" << integer << "' and '" << str << "'." << endl;
 
     //Printout 7
-    string str3{"something"};
-    char c2{'.'};
-    char extra{'"'};
-    cout << "Enter a character and a word: " << flush;
-    cin >> c2 >> str3;
-    cout << "You entered the string " << extra << str3 << extra << " and '" << "the character '" << c2 << "'." << endl;
+    cout << "Enter a character and a word: ";
+    cin >> c;
+    cin >> str;
+    cout << "You entered the string " << '"' << str << '"' << " and '" << "the character '" << c << "'." << endl;
 
     //Printout 8
-    string str4{"something"};
-    float f3{2.4};
-    char extra{'"'};
-    cout << "Enter a word and a real number: " << flush;
-    cin >> str4 >> f3;
-    cout << "You entered " << extra << str4 << extra << " and " << extra << f3 << extra << '.' << endl;
+    cout << "Enter a word and a real number: ";
+    cin >> str;
+    cin >> dbl;
+    cout << "You entered " << '"' << str << '"' << " and " << '"' << dbl << '"' << '.' << endl;
 
     //Printout 9
-    string str5{"Something"};
-    char extra{'"'};
-    cout << "Enter a text-line: " << flush;
-    getline(cin, str5);
-    cout << "You entered: " << extra << str5 << extra << endl;
+    cout << "Enter a text-line: ";
+    getline(cin, str);
+    cout << "You entered: " << '"' << str << '"' << endl;
 
     //Printout 10
-    string str6{"Something"};
-    char extra{'"'};
-    cout << "Enter a text-line: " << flush;
-    getline(cin, str6);
-    cout << "You entered: " << extra << str6 << extra << endl;*/
+    cout << "Enter a second line of text: ";
+    getline(cin, str);
+    cout << "You entered: " << '"' << str << '"' << endl;
 
     //printout 11
-    string str7{"något"};
-    cout << "Enter three words: " << flush;
-    getline(cin, str7);
-    cout << "You entered: '" << str7 << "'" << endl;
+    cout << "Enter three words: ";
+    cin >> str;
+    cout << "You entered: '" << str << " ";
+    cin >> str;
+    cout << str << " ";
+    cin >> str;
+    cout << str << "'" << endl;*/
 
 
     
